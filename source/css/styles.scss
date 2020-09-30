@@ -1,0 +1,30 @@
+// =========
+// variables
+// =========
+
+$medium-breakpoint: 600px;
+$large-breakpoint: 100px;
+
+$blue: #0000ff;;
+
+:root {
+
+  --primary-text-color: #333;
+  --link-color: $blue;
+  --link-color-hover: darken($blue, 10%);
+
+  --serif: serif;
+  --sans: sans-serif;
+
+}
+
+
+
+// =======
+// imports
+// =======
+
+@import 'global/utilities';
+@import 'global/media-queries';
+@import 'global/layout';
+@import 'global/typography';

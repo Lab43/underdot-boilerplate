@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title><%- locals.title ? `${title} – ${siteTitle}` : siteTitle %></title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='<%- hashed("/css/styles.css"); %>'>
+</head>
+
+<body<%- locals.bodyClass && ` class="${bodyClass}"` %>>
+
+  <header id='site-header'>
+    <p>Header goes here</p>
+  </header>
+
+  <div id='site-content'>
+    <%- content %>
+  </div>
+
+  <footer id='site-footer'>
+    <p>Footer goes here</p>
+  </footer>
+
+  <script type='text/javascript' src='<%- hashed("/js/scripts.js"); %>'></script>
+
+</body>
+
+</html>

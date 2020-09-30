@@ -1,0 +1,21 @@
+html {
+  font-size: 18px;
+  color: var(--primary-text-color);
+  font-family: var(--serif);
+}
+
+a {
+  color: var(--link-color);
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+p, ul, ol, blockquote {
+  margin: 0 0 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--sans);
+}

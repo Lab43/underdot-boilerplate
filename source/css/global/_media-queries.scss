@@ -1,0 +1,40 @@
+//    0                   medium-break        large-break         ∞
+//    |                   |                   |                   |
+//    |[[[[[[ small ]]]]]]|                   |                   |
+//    |                   |[[[[[[ medium ]]]]]|                   |
+//    |                   |                   |[[[[[[ large ]]]]]]|
+//    |[[[[[[[[[[ small-and-medium ]]]]]]]]]]]|                   |
+//    |                   |[[[[[[[[[[ medium-and-large ]]]]]]]]]]]|
+//    |                   |                   |                   |
+
+
+
+@mixin small {
+  @media (max-width: $medium-break - 1px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: $medium-break) and (max-width: $large-break - 1px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $large-break) {
+    @content;
+  }
+}
+
+@mixin small-and-medium {
+  @media (max-width: $large-break - 1px) {
+    @content;
+  }
+}
+
+@mixin medium-and-large {
+  @media (min-width: $medium-break) {
+    @content;
+  }
+}

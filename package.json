@@ -1,0 +1,19 @@
+{
+  "name": "underdot-boilerplate",
+  "scripts": {
+    "build": "node index",
+    "watch": "nodemon --watch source -e '*' index"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "nodemon": "^2.0.4",
+    "underdot": "file:../underdot",
+    "underdot-ejs": "file:../underdot-ejs",
+    "underdot-postcss": "file:../underdot-postcss",
+    "underdot-sass": "file:../underdot-sass",
+    "underdot-srcset": "file:../underdot-srcset",
+    "underdot-cname": "file:../underdot-cname",
+    "underdot-hash": "file:../underdot-hash",
+    "underdot-svgo": "file:../underdot-svgo"
+  }
+}
