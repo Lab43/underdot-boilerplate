@@ -1,7 +1,8 @@
 :root {
-  --primary-text-color: #333;
+  --primary-text-color: $gray;
   --link-color: $blue;
   --link-color-hover: darken($blue, 10%);
+  --heading-color: $black;
   --serif: serif;
   --sans: sans-serif;
 }

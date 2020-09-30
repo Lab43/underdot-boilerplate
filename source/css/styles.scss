@@ -5,13 +5,16 @@
 $medium-breakpoint: 600px;
 $large-breakpoint: 100px;
 
-$blue: #0000ff;;
+$blue: #0000ff;
+$gray: #333;
+$black: #111;
 
 :root {
 
-  --primary-text-color: #333;
+  --primary-text-color: $gray;
   --link-color: $blue;
   --link-color-hover: darken($blue, 10%);
+  --heading-color: $black;
 
   --serif: serif;
   --sans: sans-serif;
