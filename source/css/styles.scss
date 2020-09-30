@@ -11,10 +11,10 @@ $black: #111;
 
 :root {
 
-  --primary-text-color: $gray;
-  --link-color: $blue;
-  --link-color-hover: darken($blue, 10%);
-  --heading-color: $black;
+  --primary-text-color: #{$gray};
+  --link-color: #{$blue};
+  --link-color-hover: #{darken($blue, 25%)};
+  --heading-color: #{$black};
 
   --serif: serif;
   --sans: sans-serif;

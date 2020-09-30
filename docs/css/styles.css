@@ -1,8 +1,8 @@
 :root {
-  --primary-text-color: $gray;
-  --link-color: $blue;
-  --link-color-hover: darken($blue, 10%);
-  --heading-color: $black;
+  --primary-text-color: #333;
+  --link-color: #0000ff;
+  --link-color-hover: navy;
+  --heading-color: #111;
   --serif: serif;
   --sans: sans-serif;
 }
@@ -54,7 +54,7 @@ a {
   color: var(--link-color);
 }
 
-a:hover {
+a:hover, a.active {
   color: var(--link-color-hover);
 }
 

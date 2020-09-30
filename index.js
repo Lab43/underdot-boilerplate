@@ -7,6 +7,7 @@ const Underdot = require('underdot')
     , cname = require('underdot-cname')
     , hash = require('underdot-hash')
     , svgo = require('underdot-svgo')
+    , templateHelpers = require('underdot-template-helpers')
 ;
 
 
@@ -35,6 +36,7 @@ const underdot = new Underdot({
     cname('underdot-boilerplate.gh.l43.co'),
     hash(),
     svgo(),
+    templateHelpers(),
   ]
 });
 

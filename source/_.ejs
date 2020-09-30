@@ -11,7 +11,10 @@
 <body<%- locals.bodyClass && ` class="${bodyClass}"` %>>
 
   <header id='site-header'>
-    <p>Header goes here</p>
+    <ul>
+      <li><%- activeLink('/', siteTitle); %></li>
+      <li><%- activeLink('/example', 'Example Page'); %></li>
+    </ul>
   </header>
 
   <div id='site-content'>

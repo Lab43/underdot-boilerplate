@@ -14,6 +14,7 @@
     "underdot-srcset": "file:../underdot-srcset",
     "underdot-cname": "file:../underdot-cname",
     "underdot-hash": "file:../underdot-hash",
-    "underdot-svgo": "file:../underdot-svgo"
+    "underdot-svgo": "file:../underdot-svgo",
+    "underdot-template-helpers": "file:../underdot-template-helpers"
   }
 }

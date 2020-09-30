@@ -6,7 +6,7 @@ html {
 
 a {
   color: var(--link-color);
-  &:hover {
+  &:hover, &.active {
     color: var(--link-color-hover);
   }
 }
