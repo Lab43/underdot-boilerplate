@@ -20,6 +20,7 @@ const srcsetPresets = {
 
 
 const underdot = new Underdot({
+  destination: 'docs', // required by Github pages
   globals: {
     siteTitle: 'Underdot Boilerplate',
   },

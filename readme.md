@@ -7,4 +7,7 @@
 
 ## Deploying to GitHub pages
 
-This site is set up to be hosted on GitHub pages. Change the configuration of the `cname` plugin in `index.js` to the domain name you're using, build and commit your code to to the `main` branch (including the build directory), push the code to Github, then configure Github Pages to use the build directory.
+This site is set up to be hosted on GitHub pages.
+* The default destination folder for Underdot is `/build` but this project uses `/docs` because it makes Github Pages deployment really easy. You need to commit your compiled site (`/build`) to the repo. Github Pages will not compile it for you.
+* Go to the Settings tab in Github and configure Github Pages to use the `main` branch and `/docs` directory.
+* The domain name is configured in `index.js` using the [underdot-cname](https://github.com/Lab43/underdot-cname) plugin. Simple replace `'underdot-boilerplate.gh.l43.co'` with your domain name. Or, remove the underdot-cname plugin to use the default Github Pages url.
