@@ -1,4 +1,4 @@
-//    0                   medium-break        large-break         ∞
+//    0            medium-breakpoint   large-breakpoint           ∞
 //    |                   |                   |                   |
 //    |[[[[[[ small ]]]]]]|                   |                   |
 //    |                   |[[[[[[ medium ]]]]]|                   |
@@ -9,32 +9,75 @@
 
 
 
+// ======
+// mixins
+// ======
+
 @mixin small {
-  @media (max-width: $medium-break - 1px) {
+  @media (max-width: $medium-breakpoint - 1px) {
     @content;
   }
 }
 
 @mixin medium {
-  @media (min-width: $medium-break) and (max-width: $large-break - 1px) {
+  @media (min-width: $medium-breakpoint) and (max-width: $large-breakpoint - 1px) {
     @content;
   }
 }
 
 @mixin large {
-  @media (min-width: $large-break) {
+  @media (min-width: $large-breakpoint) {
     @content;
   }
 }
 
 @mixin small-and-medium {
-  @media (max-width: $large-break - 1px) {
+  @media (max-width: $large-breakpoint - 1px) {
     @content;
   }
 }
 
 @mixin medium-and-large {
-  @media (min-width: $medium-break) {
+  @media (min-width: $medium-breakpoint) {
     @content;
+  }
+}
+
+
+
+// ===============
+// display classes
+// ===============
+
+.small-only {
+  @include medium-and-large {
+    display: none;
+  }
+}
+
+.medium-only {
+  @include small {
+    display: none;
+  }
+  @include large {
+    display: none;
+  }
+}
+
+.large-only {
+  @include small-and-medium {
+    display: none;
+  }
+}
+
+.small-and-medium-only {
+  @include large {
+    display: none;
+  }
+}
+
+.medium-and-large-only {
+  @include small {
+    display: none;
   }
 }

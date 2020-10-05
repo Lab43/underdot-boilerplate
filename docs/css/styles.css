@@ -35,6 +35,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 600px) {
+  .small-only {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .medium-only {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .medium-only {
+    display: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .large-only {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .small-and-medium-only {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .medium-and-large-only {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
