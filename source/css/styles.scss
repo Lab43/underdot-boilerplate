@@ -3,7 +3,7 @@
 // =========
 
 $medium-breakpoint: 600px;
-$large-breakpoint: 100px;
+$large-breakpoint: 1000px;
 
 $blue: #0000ff;
 $gray: #333;
@@ -31,3 +31,9 @@ $black: #111;
 @import 'global/media-queries';
 @import 'global/layout';
 @import 'global/typography';
+
+@import 'components/header';
+@import 'components/footer';
+
+@import 'pages/home';
+@import 'pages/example';
