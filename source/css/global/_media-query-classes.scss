@@ -1,0 +1,56 @@
+//    In most cases, use by extending. Like this:
+//
+//      .mobile-menu {
+//        display: flex;
+//        @extend .small-only;
+//      }
+//
+//    Which compiles to:
+//
+//      .mobile-menu {
+//        display: flex;
+//      }
+//      @media (max-width: 600px) {
+//        .small-only,
+//        .mobile-menu {
+//          display: none;
+//        }
+//      }
+//
+//    This file gets imported last so that these selectors have a bit more specificity.
+//    Otherwise, in the example above the menu would always be shown (display flex).
+
+
+
+.small-only {
+  @include medium-and-large {
+    display: none;
+  }
+}
+
+.medium-only {
+  @include small {
+    display: none;
+  }
+  @include large {
+    display: none;
+  }
+}
+
+.large-only {
+  @include small-and-medium {
+    display: none;
+  }
+}
+
+.small-and-medium-only {
+  @include large {
+    display: none;
+  }
+}
+
+.medium-and-large-only {
+  @include small {
+    display: none;
+  }
+}

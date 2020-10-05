@@ -37,3 +37,5 @@ $black: #111;
 
 @import 'pages/home';
 @import 'pages/example';
+
+@import 'global/media-query-classes'; // See this file for an explanation of why it's imported last
