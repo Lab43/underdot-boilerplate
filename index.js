@@ -32,7 +32,7 @@ const underdot = new Underdot({
       outputStyle: 'expanded',
     }),
     postcss([autoprefixer]),
-    srcset({srcsetPresets}),
+    srcset({presets: srcsetPresets}),
     cname('underdot-boilerplate.gh.l43.co'),
     hash(),
     svgo(),
