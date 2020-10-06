@@ -35,7 +35,11 @@ const underdot = new Underdot({
     srcset({presets: srcsetPresets}),
     cname('underdot-boilerplate.gh.l43.co'),
     hash(),
-    svgo(),
+    svgo({
+      plugins: [{
+        inlineStyles: false, // so we can avoid !important in our css
+      }],
+    }),
     templateHelpers(),
   ]
 });
