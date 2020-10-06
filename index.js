@@ -26,7 +26,9 @@ const underdot = new Underdot({
     siteTitle: 'Underdot Boilerplate',
   },
   plugins: [
-    ejs(),
+    ejs({
+      views: ['source/_includes'],
+    }),
     sass({
       sourceMap: true,
       outputStyle: 'expanded',
