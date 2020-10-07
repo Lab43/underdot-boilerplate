@@ -38,9 +38,10 @@ const underdot = new Underdot({
     cname('underdot-boilerplate.gh.l43.co'),
     hash(),
     svgo({
-      plugins: [{
-        inlineStyles: false, // so we can avoid !important in our css
-      }],
+      plugins: [
+        {inlineStyles: false}, // so we can avoid !important in our css
+        {removeViewBox: false}, // allow css resizing https://css-tricks.com/scale-svg/
+      ],
     }),
     templateHelpers(),
   ]
