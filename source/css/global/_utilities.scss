@@ -37,3 +37,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.undo-auto-smoothing {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smoothing: auto;
+}
