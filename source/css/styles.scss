@@ -5,6 +5,14 @@
 $medium-breakpoint: 600px;
 $large-breakpoint: 1000px;
 
+$font-size: 20px;
+
+$site-max-width: 66rem;
+$site-padding: 1rem;
+
+$grid-columns: 12;
+$grid-gutter: 1rem;
+
 $blue: #0000ff;
 $gray: #333;
 $black: #111;
@@ -32,6 +40,7 @@ $black: #111;
 @import 'global/layout';
 @import 'global/typography';
 @import 'global/forms';
+@import 'global/grid';
 
 @import 'components/header';
 @import 'components/footer';

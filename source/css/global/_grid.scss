@@ -1,0 +1,145 @@
+// ===========================================
+// A minimal grid system inspired by Bootstrap
+// ===========================================
+
+// Equal width columns:
+//
+// <div class='row'>
+//   <div class='col'>
+//     Lorem ipsum
+//   </div>
+//   <div class='col'>
+//     Lorem ipsum
+//   </div>
+//   <div class='col'>
+//     Lorem ipsum
+//   </div>
+// </div>
+
+// Set column widths:
+//
+// <div class='row'>
+//   <div class='col-2'>
+//     Lorem ipsum
+//   </div>
+//   <div class='col-7'>
+//     Lorem ipsum
+//   </div>
+//   <div class='col-3'>
+//     Lorem ipsum
+//   </div>
+// </div>
+
+
+// =======
+// Offsets
+// =======
+
+// <div class='row'>
+//   <div class='col-6'>
+//     Lorem ipsum
+//   </div>
+//   <div class='col-5 offset-1'>
+//     Lorem ipsum
+//   </div>
+
+
+// ==================
+// Responsive classes
+// ==================
+
+// • Use .col-sm-[x] for small screens (mobile).
+// • Use .col-lg-[x] for large screens (desktop).
+// • Simply use the default classes for medium screens.
+
+// In other words, you'll probably use the default classes then either the small or
+// large classes depending on if you want to do mobile-first or desktop-first styling.
+
+// Like this:
+//
+// <div class='row'>
+//   <div class='col-3 col-sm-12'>
+//     Sidebar
+//   </div>
+//   <div class='col-9 col-sm-12'>
+//     Main
+//   </div>
+// </div>
+
+// Or this:
+//
+// <div class='row'>
+//   <div class='col-12 col-lg-3'>
+//     Sidebar
+//   </div>
+//   <div class='col-12 col-lg-8 offset-lg-1'>
+//     Main
+//   </div>
+// </div>
+
+
+
+.row {
+  margin: 0 ($grid-gutter / -2);
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    padding: 0 ($grid-gutter / 2);
+    flex: 1 0 0%;
+    border: 1px solid green;
+  };
+}
+
+@mixin make-column ($i) {
+  flex: 0 0 auto;
+  width: percentage($i / $grid-columns);
+}
+@mixin make-offset ($i) {
+  margin-left: percentage($i / $grid-columns);
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    @include make-column($i);
+  }
+}
+.offset-0 {
+  margin-left: 0;
+}
+@for $i from 1 through ($grid-columns - 1) {
+  .offset-#{$i} {
+    @include make-offset($i);
+  }
+}
+
+@include small {
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      @include make-column($i);
+    }
+  }
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  @for $i from 1 through ($grid-columns - 1) {
+    .offset-sm-#{$i} {
+      @include make-offset($i);
+    }
+  }
+}
+
+@include large {
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      @include make-column($i);
+    }
+  }
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+  @for $i from 1 through ($grid-columns - 1) {
+    .offset-lg-#{$i} {
+      @include make-offset($i);
+    }
+  }
+}

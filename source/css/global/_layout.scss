@@ -6,3 +6,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  max-width: $site-max-width + $site-padding * 2;
+  padding: 0 $site-padding;
+  margin: 0 auto;
+}

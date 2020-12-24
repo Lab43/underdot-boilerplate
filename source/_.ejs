@@ -10,20 +10,24 @@
 
 <body<%- locals.bodyClass && ` class="${bodyClass}"` %>>
 
-  <header id='site-header'>
-    <ul>
-      <li><%- activeLink('/', siteTitle); %></li>
-      <li><%- activeLink('/example', 'Example Page'); %></li>
-    </ul>
-  </header>
+  <div class='container'>
 
-  <div id='site-content'>
-    <%- content %>
+    <header id='site-header'>
+      <ul>
+        <li><%- activeLink('/', siteTitle); %></li>
+        <li><%- activeLink('/example', 'Example Page'); %></li>
+      </ul>
+    </header>
+
+    <div id='site-content'>
+      <%- content %>
+    </div>
+
+    <footer id='site-footer'>
+      <p>Footer goes here</p>
+    </footer>
+
   </div>
-
-  <footer id='site-footer'>
-    <p>Footer goes here</p>
-  </footer>
 
   <script type='text/javascript' src='<%- hashed("/js/scripts.js"); %>'></script>
 
