@@ -92,7 +92,6 @@ button {
 .row > * {
   padding: 0 0.5rem;
   flex: 1 0 0%;
-  border: 1px solid green;
 }
 
 .col-1 {
