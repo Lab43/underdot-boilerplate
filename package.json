@@ -7,14 +7,14 @@
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "nodemon": "^2.0.4",
-    "underdot": "file:../underdot",
-    "underdot-ejs": "file:../underdot-ejs",
-    "underdot-postcss": "file:../underdot-postcss",
-    "underdot-sass": "file:../underdot-sass",
-    "underdot-srcset": "file:../underdot-srcset",
-    "underdot-cname": "file:../underdot-cname",
-    "underdot-hash": "file:../underdot-hash",
-    "underdot-svgo": "file:../underdot-svgo",
-    "underdot-template-helpers": "file:../underdot-template-helpers"
+    "underdot": "^1.0.2",
+    "underdot-bust": "^1.0.1",
+    "underdot-cname": "^1.0.0",
+    "underdot-ejs": "^1.0.0",
+    "underdot-postcss": "^1.0.0",
+    "underdot-sass": "^1.0.0",
+    "underdot-srcset": "^1.0.0",
+    "underdot-svgo": "^1.0.0",
+    "underdot-template-helpers": "^1.0.0"
   }
 }

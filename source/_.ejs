@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title><%- locals.title ? `${title} – ${siteTitle}` : siteTitle %></title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' href='<%- hashed("/css/styles.css"); %>'>
+  <link rel='stylesheet' href='<%- busted("/css/styles.css"); %>'>
 </head>
 
 <body<%- locals.bodyClass && ` class="${bodyClass}"` %>>
@@ -29,7 +29,7 @@
 
   </div>
 
-  <script type='text/javascript' src='<%- hashed("/js/scripts.js"); %>'></script>
+  <script type='text/javascript' src='<%- busted("/js/scripts.js"); %>'></script>
 
 </body>
 
