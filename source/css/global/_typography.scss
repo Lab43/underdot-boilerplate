@@ -1,8 +1,23 @@
+// ======
+// global
+// ======
+
 html {
   font-size: $font-size;
   color: var(--primary-text-color);
   font-family: var(--serif);
 }
+
+body {
+  font-size: 0.9rem;
+}
+
+
+
+// ========
+// elements
+// ========
+
 
 a {
   color: var(--link-color);
@@ -18,4 +33,14 @@ p, ul, ol, blockquote {
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family: var(--sans);
+}
+
+
+
+// ==============
+// helper classes
+// ==============
+
+.center-text {
+  text-align: center;
 }

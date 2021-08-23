@@ -56,10 +56,28 @@ img {
   margin: 0 auto;
 }
 
+.center-align {
+  display: flex;
+  align-items: center;
+}
+
+.center-justify {
+  display: flex;
+  justify-content: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 html {
   font-size: 20px;
   color: var(--primary-text-color);
   font-family: var(--serif);
+}
+
+body {
+  font-size: 0.9rem;
 }
 
 a {
@@ -78,7 +96,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--sans);
 }
 
-button {
+.center-text {
+  text-align: center;
+}
+
+button, .button {
   cursor: pointer;
 }
 
