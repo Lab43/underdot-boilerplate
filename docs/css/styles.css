@@ -70,6 +70,18 @@ img {
   flex-direction: row-reverse;
 }
 
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
 html {
   font-size: 20px;
   color: var(--primary-text-color);
