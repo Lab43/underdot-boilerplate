@@ -39,8 +39,9 @@ const underdot = new Underdot({
     bust(),
     svgo({
       plugins: [
-        {inlineStyles: false}, // so we can avoid !important in our css
+        {inlineStyles:  false}, // so we can avoid !important in our css
         {removeViewBox: false}, // allow css resizing https://css-tricks.com/scale-svg/
+        {prefixIds:     true }, // prevent styles from one svg affecting another
       ],
     }),
     templateHelpers(),
