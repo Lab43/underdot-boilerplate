@@ -42,6 +42,7 @@ const underdot = new Underdot({
         {inlineStyles:  false}, // so we can avoid !important in our css
         {removeViewBox: false}, // allow css resizing https://css-tricks.com/scale-svg/
         {prefixIds:     true }, // prevent styles from one svg affecting another
+        {removeTitle:   false}, // improve accessibility by not remove <title> tags
       ],
     }),
     templateHelpers(),
