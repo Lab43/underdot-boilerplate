@@ -97,6 +97,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   color: var(--link-color);
 }
 a:hover, a.active {
