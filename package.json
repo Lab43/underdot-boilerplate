@@ -5,7 +5,7 @@
     "watch": "nodemon --watch source -e '*' index"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.4.20",
     "nodemon": "^2.0.4",
     "underdot": "^1.0.4",
     "underdot-bust": "^1.0.1",
