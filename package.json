@@ -16,7 +16,8 @@
     "underdot-sass": "^1.0.0",
     "underdot-srcset": "^1.0.2",
     "underdot-svgo": "^1.0.1",
-    "underdot-template-helpers": "^1.0.0"
+    "underdot-template-helpers": "^1.0.0",
+    "ws": "^8.18.3"
   },
   "engines": {
     "npm": ">=10.9.0",
