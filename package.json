@@ -2,11 +2,12 @@
   "name": "underdot-boilerplate",
   "scripts": {
     "build": "node index",
-    "watch": "nodemon --watch source -e '*' index"
+    "dev": "node server"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
-    "nodemon": "^2.0.4",
+    "chokidar": "^3.5.3",
+    "serve-static": "^2.2.0",
     "underdot": "^1.0.5",
     "underdot-bust": "^1.0.1",
     "underdot-cname": "^1.0.0",

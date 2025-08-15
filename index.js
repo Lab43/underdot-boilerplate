@@ -49,4 +49,14 @@ const underdot = new Underdot({
   ]
 });
 
-underdot.build();
+// Export a build function for use in other files
+const build = async () => {
+  return await underdot.build();
+};
+
+// Only build if this file is run directly
+if (require.main === module) {
+  build();
+}
+
+module.exports = { build };
