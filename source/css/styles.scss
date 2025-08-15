@@ -2,6 +2,8 @@
 // variables
 // =========
 
+@use 'sass:color';
+
 $medium-breakpoint: 600px;
 $large-breakpoint: 1000px;
 
@@ -18,17 +20,14 @@ $gray: #333;
 $black: #111;
 
 :root {
-
   --primary-text-color: #{$gray};
   --link-color: #{$blue};
-  --link-color-hover: #{darken($blue, 25%)};
+  --link-color-hover: #{color.adjust($blue, $lightness: -25%)};
   --heading-color: #{$black};
 
   --serif: serif;
   --sans: sans-serif;
-
 }
-
 
 
 // =======
