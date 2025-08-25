@@ -66,41 +66,6 @@ const watch = () => {
 
 
 
-// ===========
-// live reload
-// ===========
-
-const wss = new WebSocket.Server({ server });
-
-wss.on('connection', (ws) => {
-  console.log('🔌 Browser connected for live reload');
-  
-  ws.on('close', () => {
-    console.log('🔌 Browser disconnected');
-  });
-});
-
-const notifyBrowsers = (message) => {
-  wss.clients.forEach((client) => {
-    if (client.readyState === WebSocket.OPEN) {
-      client.send(message);
-    }
-  });
-};
-
-const reloadBrowsers = () => {
-  notifyBrowsers('reload');
-};
-
-const injectLiveReload = (html) => {
-  const liveReloadPath = path.join(__dirname, 'lib', 'live-reload.js');
-  const liveReloadScript = fs.readFileSync(liveReloadPath, 'utf8');
-  const reloadScript = `<script>${liveReloadScript}</script>`;
-  return html.replace('</body>', reloadScript + '\n</body>');
-};
-
-
-
 // ======
 // server
 // ======
@@ -137,3 +102,38 @@ server.listen(process.env.PORT || 3000, () => {
   buildSite();
   watch();
 });
+
+
+
+// ===========
+// live reload
+// ===========
+
+const wss = new WebSocket.Server({ server });
+
+wss.on('connection', (ws) => {
+  console.log('🔌 Browser connected for live reload');
+  
+  ws.on('close', () => {
+    console.log('🔌 Browser disconnected');
+  });
+});
+
+const notifyBrowsers = (message) => {
+  wss.clients.forEach((client) => {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(message);
+    }
+  });
+};
+
+const reloadBrowsers = () => {
+  notifyBrowsers('reload');
+};
+
+const injectLiveReload = (html) => {
+  const liveReloadPath = path.join(__dirname, 'lib', 'live-reload.js');
+  const liveReloadScript = fs.readFileSync(liveReloadPath, 'utf8');
+  const reloadScript = `<script>${liveReloadScript}</script>`;
+  return html.replace('</body>', reloadScript + '\n</body>');
+};
