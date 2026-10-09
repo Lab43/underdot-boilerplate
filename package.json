@@ -22,5 +22,8 @@
   "engines": {
     "npm": ">=10.9.0",
     "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@lab43/q": "1.0.0"
   }
 }

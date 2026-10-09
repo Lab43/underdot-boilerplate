@@ -1,0 +1,6 @@
+{
+  "extraKnownMarketplaces": {
+    "q-pin-lab43-underdot-boilerplate-949e1b": { "source": { "source": "directory", "path": "./" } }
+  },
+  "enabledPlugins": { "q@q-pin-lab43-underdot-boilerplate-949e1b": true }
+}
