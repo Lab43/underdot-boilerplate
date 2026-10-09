@@ -26,6 +26,12 @@ Conventions come in three tiers: q's own, the conventions of any installed exten
 - `@lab43/q conventions/pull-requests.md` — rules for authoring a pull request
 - `@lab43/q conventions/writing.md` — rules for writing prose: docs, plans, PR bodies, anything a human or agent will read
 
+`underdot` — Rules for writing a site built on Underdot: its configuration, source tree, templates, and plugins.
+
+- `underdot conventions/configuration.md` — rules for writing a site's Underdot configuration file
+- `underdot conventions/ejs.md` — rules for writing a site's EJS pages, templates, and partials
+- `underdot conventions/templates.md` — rules for writing a site's pages and templates in any engine
+
 This project's own:
 
 - `q-docs/conventions/principles.md` — cross-cutting rules, including deviations from q's
@@ -41,4 +47,6 @@ What this product commits to, stated as behavior the code must honor (source: @l
 
 How to use and operate this product, rather than how to write its code (source: @lab43/q conventions/documentation.md, Taxonomy).
 
-- none yet
+`underdot` — Rules for writing a site built on Underdot: its configuration, source tree, templates, and plugins.
+
+- `underdot guides/migrating-from-v1.md` — what to change in a site built on Underdot v1 so it builds on v2
