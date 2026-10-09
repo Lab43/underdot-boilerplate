@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title><%- locals.title ? `${title} – ${siteTitle}` : siteTitle %></title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' href='<%- busted("/css/styles.css"); %>'>
+  <link rel='stylesheet' href='<%- bust("/css/styles.css"); %>'>
 </head>
 
 <body<%- locals.bodyClass && ` class="${bodyClass}"` %>>
@@ -15,12 +15,12 @@
     <header id='site-header'>
       <ul>
         <li><%- activeLink('/', siteTitle); %></li>
-        <li><%- activeLink('/example', 'Example Page'); %></li>
+        <li><%- activeLink('/example/', 'Example Page'); %></li>
       </ul>
     </header>
 
     <div id='site-content'>
-      <%- content %>
+      <%- _content %>
     </div>
 
     <footer id='site-footer'>
@@ -29,7 +29,7 @@
 
   </div>
 
-  <script type='text/javascript' src='<%- busted("/js/scripts.js"); %>'></script>
+  <script type='text/javascript' src='<%- bust("/js/scripts.js"); %>'></script>
 
 </body>
 
