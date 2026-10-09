@@ -50,3 +50,7 @@ How to use and operate this product, rather than how to write its code (source: 
 `underdot` — Rules for writing a site built on Underdot: its configuration, source tree, templates, and plugins.
 
 - `underdot guides/migrating-from-v1.md` — what to change in a site built on Underdot v1 so it builds on v2
+
+This project's own:
+
+- `q-docs/guides/driving-manual.md` — how to bring the site up and exercise it, for a session checking that a change works

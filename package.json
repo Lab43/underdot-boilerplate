@@ -1,27 +1,24 @@
 {
   "name": "underdot-boilerplate",
+  "type": "module",
   "scripts": {
-    "build": "node index",
-    "dev": "node server"
+    "build": "underdot build",
+    "dev": "underdot dev"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
-    "chokidar": "^3.5.3",
-    "serve-static": "^2.2.0",
     "underdot": "^2.0.0",
-    "underdot-bust": "^1.0.1",
-    "underdot-cname": "^1.0.0",
-    "underdot-ejs": "^1.0.0",
-    "underdot-postcss": "^1.0.0",
-    "underdot-sass": "^1.0.0",
-    "underdot-srcset": "^1.0.2",
-    "underdot-svgo": "^1.0.1",
-    "underdot-template-helpers": "^1.0.0",
-    "ws": "^8.18.3"
+    "underdot-bust": "^2.0.0",
+    "underdot-ejs": "^2.0.0",
+    "underdot-helpers": "^2.0.0",
+    "underdot-postcss": "^2.0.0",
+    "underdot-sass": "^2.0.0",
+    "underdot-srcset": "^2.0.0",
+    "underdot-svgo": "^2.0.0"
   },
   "engines": {
     "npm": ">=10.9.0",
-    "node": ">=22.0.0"
+    "node": "^22.18.0 || >=23.5.0"
   },
   "devDependencies": {
     "@lab43/q": "1.0.0"
